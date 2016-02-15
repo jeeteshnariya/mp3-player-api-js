@@ -59,7 +59,7 @@ If you want to test any API URI result, use "PostMan" with Google Chrome
 - /tracks | GET : get tracks collection
  -/tracks/[id] | GET : get single track
 
-/search | POST (with body param : search=[yourSearch]) : search into albums, genders, tracks or artists
+- /search | POST (with body param : search=[yourSearch]) : search into albums, genders, tracks or artists
 
 # Bonus :
 
