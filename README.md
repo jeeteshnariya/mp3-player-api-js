@@ -1,6 +1,7 @@
 # mp3-player-api-js
 
 MP3 Player with PHP REST API
+
 3 javascript app with Dust, Handlebars and Mustache
 
 # Install
