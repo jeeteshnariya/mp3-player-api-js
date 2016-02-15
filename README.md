@@ -58,7 +58,7 @@ If you want to test any API URI result, use "PostMan" with Google Chrome
 - /artists/[id] | GET : get single artists with her albums
 
 - /tracks | GET : get tracks collection
- -/tracks/[id] | GET : get single track
+- /tracks/[id] | GET : get single track
 
 - /search | POST (with body param : search=[yourSearch]) : search into albums, genders, tracks or artists
 
