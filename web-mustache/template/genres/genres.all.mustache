@@ -1,0 +1,19 @@
+<!-- Mini-card -->
+<div class="row">
+    <!-- Pour chaque genre -->
+    {{#genres}}
+        <div class="col s12 m12 l8 offset-l2 wow slideInRight">
+            <div class="mini-card z-depth-4 hoverable">
+                <div id="trapezoid">
+                    <h1>{{ name }}</h1>
+
+                    <a href="#/genres/{{ id }}">
+                        <div class="fab waves-circle waves-light"><span>+</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    {{/genres}}
+    <!-- /Pour chaque genre -->
+</div>
+<!-- /Mini-card -->

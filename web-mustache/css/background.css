@@ -1,0 +1,23 @@
+body {
+    background: #000;
+    color: #FFF;
+    overflow-x: hidden;
+}
+
+.skewed-bg {
+    background: #e0e0e0;
+    padding: 200px 0;
+    -webkit-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+    margin-top: -200px;
+}
+
+.skewed-bg .content {
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+    text-align: center;
+}
+
+main {
+    z-index: 999;
+}

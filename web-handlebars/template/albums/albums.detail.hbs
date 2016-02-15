@@ -1,0 +1,44 @@
+<!-- Card -->
+<div class="row active-with-click">
+    <div class="col s12 m6 offset-m3 l4 offset-l4 wow tada">
+        <article class="material-card full {{ album.random_album_color }}-card">
+            <h2>
+                <span>{{ album.name }}</span>
+
+                <strong>
+                    <i class="material-icons">star</i>
+                    {{ album.artist_name }}
+                    <i class="material-icons">star</i>
+                </strong>
+            </h2>
+
+            <div class="mc-content hoverable z-depth-2">
+                <div class="img-container">
+                    <img class="responsive-img" src="{{ album.cover }}" alt="{{ album.name }}">
+                </div>
+                <div class="mc-description">
+                    {{ album.description }}
+                </div>
+                <div class="genres">
+                    {{#each album.genres}}
+                        <div class="chip"><a href="#/genres/{{ id }}">{{ name }}</a></div>
+                    {{/each}}
+                </div>
+
+                <p class="date">
+                    <i class="material-icons right">access_time</i>{{ album.formated_release_date }}
+                </p>
+            </div>
+            <a class="mc-btn-action waves-effect waves-light">
+                <i class="material-icons">menu</i>
+            </a>
+        </article>
+    </div>
+</div>
+<!-- /Card -->
+
+<!-- Pistes mp3 -->
+<div class="player-tracks">
+    <div id="plwrap"></div>
+</div>
+<!-- /Pistes mp3 -->

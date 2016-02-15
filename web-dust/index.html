@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MyAPI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/mini-card.css">
+    <link rel="stylesheet" href="./css/player.css">
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar-fixed">
+    <nav class="indigo darken-1 z-depth-1" role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="left hide-on-med-and-down">
+                <li class="route-home"><a href="#"><i class="material-icons left">home</i>Accueil</a></li>
+                <li class="route-albums"><a href="#/albums"><i class="material-icons left">album</i>Albums</a></li>
+                <li class="route-artists"><a href="#/artists"><i class="material-icons left">person_pin</i>Artistes</a></li>
+                <li class="route-genres"><a href="#/genres"><i class="material-icons left">library_music</i>Genres</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li class="route-home"><a href="#"><i class="material-icons left">home</i>Accueil</a></li>
+                <li class="route-albums"><a href="#/albums"><i class="material-icons left">album</i>Albums</a></li>
+                <li class="route-artists"><a href="#/artists"><i class="material-icons left">person_pin</i>Artistes</a></li>
+                <li class="route-genres"><a href="#/genres"><i class="material-icons left">library_music</i>Genres</a></li>
+            </ul>
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+<!-- /Navbar -->
+
+<!-- Player -->
+<div class="player-controls">
+    <div id="audiowrap">
+        <span id="npTitle"></span>
+
+        <div id="audio0">
+            <audio preload id="audio1" controls="controls" autoplay="autoplay">Votre navigateur ne supporte pas HTML5 !</audio>
+        </div>
+        <div id="tracks">
+            <a id="btnPrev"><i class="material-icons">keyboard_arrow_left</i></a>
+            <a id="btnNext"><i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
+    </div>
+</div>
+<!-- /Player -->
+
+<!-- Background -->
+<div class="skewed-bg">
+    <div class="content">
+        <!-- Searchbar -->
+        <nav class="deep-orange lighten-1 z-depth-2 wow bounceInDown search-navbar">
+            <div class="nav-wrapper">
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons" id="search-form-close">close</i>
+                </div>
+            </div>
+        </nav>
+        <!-- /Searchbar -->
+
+        <!-- Our template -->
+        <main></main>
+        <!-- /Our template -->
+    </div>
+</div>
+<!-- /Background -->
+
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dustjs-linkedin/2.7.2/dust-full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="./js/route.js"></script>
+<script src="./js/request.js"></script>
+<script src="./js/card.js"></script>
+<script src="./js/mp3.js"></script>
+<script src="./js/player.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

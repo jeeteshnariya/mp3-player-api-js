@@ -1,0 +1,28 @@
+<!-- Mini-card -->
+<div class="row">
+    <div class="col s12 m12 l8 offset-l2 wow slideInLeft">
+        <div class="mini-card z-depth-4 hoverable" style="background: #000 url('{{ artist.photo }}') no-repeat right center; background-size: 55%;">
+            <div id="trapezoid">
+                <h1>{{ artist.name }}</h1>
+
+                <div class="text"><i>{{ artist.description }}</i></div>
+                <div class="data">
+                    <h4><i class="material-icons">album</i> Albums : {{ artist.total_albums }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Mini-card -->
+
+<!-- Panel biographie -->
+<div class="row">
+    <div class="col s12 m12 l8 offset-l2 wow slideInRight">
+        <div class="card-panel indigo z-depth-5">
+          <span class="white-text">
+              {{ artist.bio }}
+          </span>
+        </div>
+    </div>
+</div>
+<!-- /Panel biographie -->

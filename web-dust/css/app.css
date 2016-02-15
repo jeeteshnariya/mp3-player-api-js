@@ -1,0 +1,45 @@
+/* Search field */
+.input-field input[type=search]:focus {
+    background-color: #ff8a65;
+    border: 0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav ul a {
+    font-weight: bold;
+}
+
+/* Search navbar */
+.search-navbar {
+    margin-bottom: 30px;
+}
+
+/* Fix sticky materialize.css sidebar mobile bug */
+.side-nav {
+    height: 100vh;
+}
+
+/* Webkit scrollbar */
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #bdc3c7;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #e74c3c linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent);
+}

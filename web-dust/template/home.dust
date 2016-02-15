@@ -1,0 +1,38 @@
+<!-- Card -->
+<div class="row active-with-click">
+    <!-- Pour chaque album, dans une liste prise au hasard -->
+    {#albums}
+        <div class="col s12 m6 l4 wow jello">
+            <article class="material-card {random_album_color}-card">
+                <h2>
+                    <span>{name}</span>
+
+                    <strong>
+                        {artist_name}
+                    </strong>
+                </h2>
+
+                <div class="mc-content hoverable z-depth-2">
+                    <div class="img-container">
+                        <img class="responsive-img" src="{cover}" alt="{name}">
+                    </div>
+                    <div class="mc-description">
+                        {description} ...
+                    </div>
+                    <p class="date">
+                        <i class="material-icons right">access_time</i>{formated_release_date}
+                    </p>
+                </div>
+                <a class="mc-btn-action waves-effect waves-light">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <div class="mc-footer">
+                    <a class="waves-effect waves-light btn-large" href="#/albums/{id}"><i class="material-icons right">details</i>Détails</a>
+                </div>
+            </article>
+        </div>
+    {/albums}
+    <!-- /Pour chaque album, dans une liste prise au hasard -->
+</div>
+<!-- /Card -->
